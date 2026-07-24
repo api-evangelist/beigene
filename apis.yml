@@ -1,7 +1,23 @@
 aid: beigene
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/beigene.png
 name: BeiGene
-description: 'BeiGene is a company surfaced as a portfolio company of hillhouse and added to the API Evangelist
-  network as a stub for enrichment. Sector: biotech. This profile is a lead awaiting the enrichment pipeline.'
+description: 'BeiGene (rebranded as BeOne Medicines in 2025) is a global oncology biopharmaceutical company
+  founded in 2010, developing and commercializing cancer therapies worldwide. Its portfolio spans blood cancers
+  and solid tumors, led by BRUKINSA (zanubrutinib), a BTK inhibitor, alongside programs in protein degradation
+  (CDACs) and antibody-drug conjugates (ADCs). The company is listed on NASDAQ (BGNE), HKEX, and the Shanghai
+  STAR Market, with a global footprint across 30+ countries (beonemedicines.com). Surfaced as a portfolio
+  company of Hillhouse; no public developer portal, API, or SDK program is currently published.'
 url: https://raw.githubusercontent.com/api-evangelist/beigene/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Biotech
+- Pharmaceuticals
+- Oncology
+- Healthcare
+- Life Sciences
+- Drug Development
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/beigene-domain-security.yml
 - type: Website
   url: https://www.beigene.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
